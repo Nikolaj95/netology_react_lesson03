@@ -1,0 +1,47 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+films/node_modules
+films/.pnp
+films/.pnp.js
+
+# testing
+films/coverage
+
+# production
+films/build
+
+# misc
+films/.DS_Store
+films/.env.local
+films/.env.development.local
+films/.env.test.local
+films/.env.production.local
+
+films/npm-debug.log*
+films/yarn-debug.log*
+films/yarn-error.log*
+films/.idea
+
+# dependencies
+listing/node_modules
+listing/.pnp
+listing/.pnp.js
+
+# testing
+listing/coverage
+
+# production
+listing/build
+
+# misc
+listing/.DS_Store
+listing/.env.local
+listing/.env.development.local
+listing/.env.test.local
+listing/.env.production.local
+
+listing/npm-debug.log*
+listing/yarn-debug.log*
+listing/yarn-error.log*
+listing/.idea
