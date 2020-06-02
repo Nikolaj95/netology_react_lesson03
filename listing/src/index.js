@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import * as serviceWorker from './serviceWorker';
 import Listing from './components/Listing';
 
 const getData = (url) => {
@@ -22,10 +21,11 @@ const getData = (url) => {
         request.send();
     });
 }
-const good = (info) => {
+const listingRender = (info) => {
     ReactDOM.render(<Listing items={info}/>,
         document.getElementById('root'))
 }
 
-getData('./etsy.json').then(good);
-serviceWorker.unregister();
+getData('./etsy.json')
+    .then(listingRender)
+    .catch(error => console.log(error));
